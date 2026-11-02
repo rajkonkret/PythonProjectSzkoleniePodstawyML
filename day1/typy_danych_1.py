@@ -107,3 +107,5 @@ print(f"{a=}")  # a=6
 
 print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 6 == 9 = False -> czy równe
 print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 6 != 9 = True -> cy różne
+
+
