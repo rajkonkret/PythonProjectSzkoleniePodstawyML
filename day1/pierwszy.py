@@ -24,3 +24,25 @@ print("Radek")
 print("Radek")
 print("Radek")
 print("Radek")
+
+# type() - sprawdzanie typu danych
+print(type("Radek"))  # <class 'str'>, dane tekstowe
+
+print("38" + "90")  # 3890, łaczenie tekstów, konkatenacj
+print('Radek' + "1")  # Radek1
+
+print(38 + 90)  # 128
+print(type(90))  # <class 'int'>, liczby całkowite
+
+# sys
+import sys
+
+print(sys.int_info)
+# sys.int_info(bits_per_digit=30, sizeof_digit=4,
+# default_max_str_digits=4300, str_digits_check_threshold=640)
+
+# print("28" + 89)  # TypeError: can only concatenate str (not "int") to str
+
+# rzutowanie typów: int(), str()
+print(int("39") + int(30))  # 69
+print("Radek" + str(1))  # Radek1
