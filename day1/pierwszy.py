@@ -48,3 +48,32 @@ print(int("39") + int(30))  # 69
 print("Radek" + str(1))  # Radek1
 
 print(168 * "35")  # mnożenie tekstów
+
+# zmienna - pudełko na dane, szufladka
+
+# snake_case
+
+name = "Radek"
+
+print(name)
+print(type(name))  # <class 'str'>
+
+# typowane dynamiczne
+age = 89
+print(age)
+print(type(age))  # <class 'int'>
+
+age = "Radek"
+print(age)
+print(type(age))  # <class 'str'>
+
+# print(age + 10)  # TypeError: can only concatenate str (not "int") to str
+
+# podpowiedzi typów
+name: str = "Radek"
+print(name)
+print(type(name)) # <class 'str'>
+
+name = 90
+print(name) # 90
+# mypy, pyright, ruff
