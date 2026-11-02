@@ -71,4 +71,25 @@ print(bool("0"))  # True
 print(None)  # odpowiednik nulla, sta nieokreslony, nie wiem
 print(bool(None))  # False
 
+# operacje logiczny
+print(40 * "-")
 
+# and - i
+print(False and True)
+print(False and False)
+print(True and False)
+print(True and True)  # True
+
+print(35 * "-")
+
+# or - lub
+print(False or True)
+print(False or False)  # False
+print(True or False)
+print(True or True)
+
+print(35 * "-")
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
