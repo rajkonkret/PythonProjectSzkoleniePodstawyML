@@ -128,3 +128,8 @@ print(f"Używamy wersji Pythona {wersja:.0f}")  # Używamy wersji Pythona 4 - za
 x = 3.8769
 y = round(x, 2)
 print(y)  # 3.88
+
+print(f"{user:<10}")  # "Tomek     " wyrównanie do lewej
+print(f"{user:>15}")  # "          Tomek"
+print(f"{user:^20}")  # "       Tomek        "
+print(f"{user:.^20}")  # ".......Tomek........"
