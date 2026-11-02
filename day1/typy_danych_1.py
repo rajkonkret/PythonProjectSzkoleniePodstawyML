@@ -51,3 +51,24 @@ print(sys.float_info)
 czy_znasz_python = True
 print(czy_znasz_python)  # True
 print(type(czy_znasz_python))  # <class 'bool'> boolean, logiczny
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+# bool() - rzutowanie na typ logiczzny
+print(bool(1))  # True
+print(bool(0))  # False
+
+print(bool(100))  # True
+print(bool(-100))  # True
+
+print(bool("Radek"))  # True
+
+print(bool(""))  # False
+
+print(bool("0"))  # True
+
+print(None)  # odpowiednik nulla, sta nieokreslony, nie wiem
+print(bool(None))  # False
+
+
