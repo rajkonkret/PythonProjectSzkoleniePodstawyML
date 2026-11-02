@@ -102,3 +102,29 @@ print(starszy % imie)  # Witaj Radek
 
 # zabraniam używać
 print("Witaj {}".format("Radek"))  # Witaj Radek
+
+user = "Tomek"
+wiek = 51
+
+print("Witaj %s, nmasz teraz %d lat." % (user, wiek))
+# Witaj Tomek, nmasz teraz 51 lat.
+
+# TypeError: %d format: a real number is required, not str
+# print("Witaj %d, nmasz teraz %s lat." % (user, wiek))
+# %d - digit
+# %s - str
+
+# %i - int
+# %f - float - zmiennoprzecinkowe
+
+print("Używamy wersji Pythona %i" % 3)  # Używamy wersji Pythona 3
+
+wersja = 3.90001  # float
+print(f"Używamy wersji Pythona {wersja}")  # Używamy wersji Pythona 3.90001
+print(f"Używamy wersji Pythona {wersja:.2f}")  # Używamy wersji Pythona 3.90
+print(f"Używamy wersji Pythona {wersja:.1f}")  # Używamy wersji Pythona 3.9
+print(f"Używamy wersji Pythona {wersja:.0f}")  # Używamy wersji Pythona 4 - zaokrągla
+
+x = 3.8769
+y = round(x, 2)
+print(y)  # 3.88
