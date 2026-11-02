@@ -16,3 +16,5 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # 2x shift - wyszukiwarka
 # wheel, theme
+# https://peps.python.org/pep-0008/
+# ctrl alt l - formatowanie kodu
