@@ -18,3 +18,17 @@ print(tekst.title())  # Witaj Świecie
 
 print(tekst)  # Witaj Świecie
 print(len(tekst))  # len() - długośc tekstu, 13 liter
+
+# Witaj Świecie
+# 0123456789... numerowanie od zera
+
+print(tekst[0])  # "w"
+print(tekst[3])  # "a"
+
+print(tekst.index("a"))  # indeks 3
+
+# "e"
+print(tekst.index("e"))  # indeks 9
+print(tekst.count("e"))  # występuje 2 razy
+
+print(tekst.lower().count("w"))  # występuje 2 razy
