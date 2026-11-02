@@ -93,3 +93,17 @@ print(35 * "-")
 # not - negacja
 print(not True)  # False
 print(not False)  # True
+
+a = 6
+b = 9
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 9 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 9 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 9 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 6 <= 9 = True
+
+print(f"Porównanie {a <= b = }")  # Porównanie a <= b = True
+print(f"{a=}")  # a=6
+
+print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 6 == 9 = False -> czy równe
+print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 6 != 9 = True -> cy różne
