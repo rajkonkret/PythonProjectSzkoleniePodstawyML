@@ -79,4 +79,20 @@ i lubię Pythona.
 # i lubię Pythona.
 
 """Komentarz 
-wielolinijkowy - doxstring - dokumentacji"""
+wielolinijkowy - docstring - dokumentacji"""
+
+print(print.__doc__)
+#   sep
+#     string inserted between values, default a space.
+#   end
+#     string appended after the last value, default a newline.
+#   file
+#     a file-like object (stream); defaults to the current sys.stdout.
+#   flush
+#     whether to forcibly flush the stream.
+
+print("Imie:", imie)  # Imie: Radek
+print("Imie:", imie, sep="_ _")  # Imie:_ _Radek
+
+print("Radek:", end="-")
+print("tomek")  # Radek:-tomek
