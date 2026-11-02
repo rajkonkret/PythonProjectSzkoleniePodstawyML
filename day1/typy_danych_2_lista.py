@@ -128,3 +128,17 @@ print(lista)
 # ['Radek', 'Ola', 'Tomek', 'Alicja', 'Jarek', 'Karol', 'Zenek', 'Anna', 'Jarek']
 
 print(lista.index("Jarek"))  # index numer 4
+
+# usunięcie eleemntu z listy
+lista.remove("Jarek")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Alicja', 'Karol', 'Zenek', 'Anna', 'Jarek']
+
+# usunięcie po indeksie, zwraca usunięty element
+# pop()
+print(lista.pop(2))  # Tomek
+print(lista)
+# ['Radek', 'Ola', 'Alicja', 'Karol', 'Zenek', 'Anna', 'Jarek']
+
+zmienna = lista.pop()  # usunie ostatni element
+print(zmienna)  # Jarek
