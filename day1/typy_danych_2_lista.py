@@ -24,4 +24,24 @@ print(lista)
 
 print(len(lista))  # długośc 7
 
+# ['Radek', 'Tomek', 'Adrian', 'Jarek', 'Karol', 'Zenek', 'Anna']
+#     0         1        2         3        4       5        6
 
+print(lista[0])
+print(lista[2])
+print(lista[4])
+# Radek
+# Adrian
+# Karol
+
+# print(lista[10])  # IndexError: list index out of range
+
+# ostatni element z listy
+print(lista[len(lista) - 1])  # Anna
+print(lista[-1])  # Anna
+
+# ['Radek', 'Tomek', 'Adrian', 'Jarek', 'Karol', 'Zenek', 'Anna']
+#     0         1        2         3        4       5        6
+#     -7        -6       -5        -4       -3      -2       -1
+
+print(lista[-2])  # Zenek
