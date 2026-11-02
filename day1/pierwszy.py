@@ -46,3 +46,5 @@ print(sys.int_info)
 # rzutowanie typów: int(), str()
 print(int("39") + int(30))  # 69
 print("Radek" + str(1))  # Radek1
+
+print(168 * "35")  # mnożenie tekstów
