@@ -32,3 +32,7 @@ print(tekst.index("e"))  # indeks 9
 print(tekst.count("e"))  # występuje 2 razy
 
 print(tekst.lower().count("w"))  # występuje 2 razy
+
+# Witaj Świecie
+# 0123456789... numerowanie od zera
+print(tekst.count("j", 0, 4))  # wystepuje 0 razy, z prawej strony zbiór otwarty -> 0123
