@@ -133,3 +133,14 @@ print(f"{user:<10}")  # "Tomek     " wyrównanie do lewej
 print(f"{user:>15}")  # "          Tomek"
 print(f"{user:^20}")  # "       Tomek        "
 print(f"{user:.^20}")  # ".......Tomek........"
+
+liczba = 908789876456321  # int
+print(f"Nasza duża liczba: {liczba}")  # Nasza duża liczba: 908789876456321
+print(f"Nasza duża liczba: {liczba:,}")  # Nasza duża liczba: 908,789,876,456,321
+print(f"Nasza duża liczba: {liczba:_}")  # Nasza duża liczba: 908_789_876_456_321
+print(f"Nasza duża liczba: {liczba:_}".replace("_", " "))  # Nasza duża liczba: 908 789 876 456 321
+
+liczba = 15000000000
+liczba = 15_000_000_000
+print(liczba)  # 15000000000
+print(type(liczba))  # <class 'int'>
