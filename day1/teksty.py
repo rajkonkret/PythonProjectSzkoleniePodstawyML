@@ -36,3 +36,9 @@ print(tekst.lower().count("w"))  # występuje 2 razy
 # Witaj Świecie
 # 0123456789... numerowanie od zera
 print(tekst.count("j", 0, 4))  # wystepuje 0 razy, z prawej strony zbiór otwarty -> 0123
+
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie białych znaków (spacji) z początku i końca
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
