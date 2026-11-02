@@ -98,3 +98,33 @@ print(lista1)  # [1, 2, 3, [5, 6, 7, 8]]
 
 lista2.extend(lista_range)
 print(lista2)  # [4, 5, 6, 5, 6, 7, 8]
+
+# nie ma typu tablica (array)
+tablica = [[1, 2], [3, 4]]
+print(tablica)
+# numpy - biblioteka do działań z tablicami/macierzami
+
+print(lista)
+# ['Radek', 'Tomek', 'Adrian', 'Jarek', 'Karol', 'Zenek', 'Anna']
+
+# nadpisanie danych
+lista[2] = "Alicja"
+print(lista)
+# ['Radek', 'Tomek', 'Alicja', 'Jarek', 'Karol', 'Zenek', 'Anna']
+
+# dopisanie elementu we wskazanym indeksie
+
+lista.insert(1, "Ola")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Alicja', 'Jarek', 'Karol', 'Zenek', 'Anna']
+
+# sprawdzenie indexu
+print(lista.index("Alicja"))  # 3
+
+# dopiszcie jakis elemnt
+# sprawdzic index
+lista.append("Jarek")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Alicja', 'Jarek', 'Karol', 'Zenek', 'Anna', 'Jarek']
+
+print(lista.index("Jarek"))  # index numer 4
