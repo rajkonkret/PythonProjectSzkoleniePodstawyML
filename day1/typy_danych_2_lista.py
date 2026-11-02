@@ -88,4 +88,13 @@ print(lista_15[::-1])  # odwrócona kolejność
 
 print(list(range(5, 15, 2)))  # [5, 7, 9, 11, 13] (start, stop, krok)
 
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+print(lista1 + lista2)  # [1, 2, 3, 4, 5, 6] łaczy listy
 
+lista_range = list(range(5, 9))
+lista1.append(lista_range)
+print(lista1)  # [1, 2, 3, [5, 6, 7, 8]]
+
+lista2.extend(lista_range)
+print(lista2)  # [4, 5, 6, 5, 6, 7, 8]
