@@ -196,3 +196,37 @@ print(liczby[-2])
 # [999, 12.34]
 # 12.34
 # 567
+
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+liczby.sort()  # zmienia oryginał
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # kod znaku, 65
+# print(ord("AB"))  # TypeError: ord() expected a character, but string of length 2 found
+
+print(chr(65))  # A
+
+print(lista_copy)
+lista_copy.sort()
+print(lista_copy)
+# ['Alicja', 'Anna', 'Karol', 'Ola', 'Radek', 'Zenek']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)
+# ['Zenek', 'Radek', 'Ola', 'Karol', 'Anna', 'Alicja']
+
+tekst = "Pyth on ."
+# [], list()
+
+lista = [tekst]
+print(lista)  # ['Pyth on .']
+
+#  rozpakowanie sekwencji
+lista1 = list(tekst)
+print(lista1)
+# ['P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
