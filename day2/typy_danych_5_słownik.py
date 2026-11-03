@@ -52,3 +52,9 @@ dict_small = {'x': 20}
 print(dict_small)
 dict_small.update([('imie', 'Radek'), ('wiek', 54)])
 print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
+
+# input() - mozliwosc wprowadzania danych do komputera
+# tekst = input("Podaj imię: ")
+# print(tekst)
+# Podaj imię: Radek
+# Radek
