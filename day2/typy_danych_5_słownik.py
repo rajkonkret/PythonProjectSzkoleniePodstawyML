@@ -58,3 +58,6 @@ print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
 # print(tekst)
 # Podaj imię: Radek
 # Radek
+
+# napisac aplikację kalkulator
+# a + b
