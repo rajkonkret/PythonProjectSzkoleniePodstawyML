@@ -41,3 +41,14 @@ print(dictionary['Imie'.lower()])  # ['Radek', 'Tomek', 'Anna']
 
 print(dictionary.get("Imie"))  # None
 print(dictionary.get("Imie", "default"))  # default
+
+dictionary.update({'date': '12-12-2067'})
+print(dictionary)
+# {'imie': ['Radek', 'Tomek', 'Anna'], 'wiek': 54, 'date': '12-12-2067'}
+
+# [('imie', 'Radek'), ('wiek', 54)]
+
+dict_small = {'x': 20}
+print(dict_small)
+dict_small.update([('imie', 'Radek'), ('wiek', 54)])
+print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
