@@ -31,6 +31,8 @@ while True:
         elif odp == "3":
             print(f"Mnożenie: {a} * {b} = {a * b}")
         elif odp == "4":
+            if b == 0:
+                raise ZeroDivisionError("B nie może być zero")
             print(f"Dzielenie: {a} / {b} = {a / b}")
     except ZeroDivisionError:
         print("Nie dziel przez zero")
