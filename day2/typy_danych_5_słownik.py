@@ -61,3 +61,9 @@ print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
 
 # napisac aplikację kalkulator
 # a + b
+a = int(input("Podaj liczbę a: "))
+b = float(input("Podaj liczbę b: "))
+print(int(a) + float(b))
+# Podaj liczbę a: 5
+# Podaj liczbę b: 6
+# 11.0
