@@ -67,3 +67,19 @@ zbior.update(zbior_2)
 print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 
 krotka = tuple(zbior)
+print(krotka)  # (777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62)
+
+lista = list(zbior)
+print(lista)  # [777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62]
+
+# in
+# sprawdzenie czy dany element istnieje w kolekcji
+
+print(667 in lista)
+print(667 in krotka)
+print(667 in zbior)
+print(767 in zbior)
+
+tekst = "Witaj Świecie"
+
+print("Witaj" in tekst)  # True
