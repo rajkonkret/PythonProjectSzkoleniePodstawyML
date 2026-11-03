@@ -68,6 +68,13 @@ print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
 # Podaj liczbę b: 6
 # 11.0
 
+print(chr(223)) # ß
+name1 = "GROSS"
+name2 = "groß"
+
+print(name1.lower() == name2.lower()) # False
+print(name1.casefold() == name2.casefold()) # True
+
 # napisac program słownik pol-ang
 pol_ang = {'pies': "dog", "kot": "cat", "dach": "roof"}
 print("Znam takie słowa:", pol_ang.keys())
@@ -75,5 +82,10 @@ print("Znam takie słowa:", pol_ang.keys())
 odp = input("Podaj słówko do przetłumaczenia: ")
 print(f"""
 Tłumaczenie słowa: {odp}
-to: {pol_ang.get(odp.strip().lower(), "Nie ma takiego słowa w słowniku")}
+to: {pol_ang.get(odp.strip().casefold(), "Nie ma takiego słowa w słowniku")}
 """)
+# Znam takie słowa: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumaczenia:  Kot
+#
+# Tłumaczenie słowa:  Kot
+# to: cat
