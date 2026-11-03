@@ -27,3 +27,25 @@ if odp:
     print("Brawo")
 
 print("koniec warunku")
+
+# odp = "Radek"
+odp = "Tomek"
+if odp == "Radek":
+    print("Jestem Radek")
+else:
+    print("To nie Radek")
+# To nie Radek
+
+if odp == "Radek":
+    print("Jestem Radek")
+elif odp == "Tomek":
+    print("Jestem Tomek")
+else:
+    print("inny")
+# Jestem Tomek
+
+# pobieramy od użytkownika liczbę od 0 do 100
+# jesli wynik egzaminu 90 i wiecej -> bardzo dobry
+# od 60 do 89 -> zdany
+# ponizej 60 -> niezdany
+
