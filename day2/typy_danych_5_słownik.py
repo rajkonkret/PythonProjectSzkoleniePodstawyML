@@ -36,4 +36,8 @@ print(dictionary['imie'])  # Tomek
 dictionary['imie'] = ['Radek', "Tomek", "Anna"]
 print(dictionary)  # {'imie': ['Radek', 'Tomek', 'Anna'], 'wiek': 54}
 
+# print(dictionary['Imie'])  # KeyError: 'Imie'
+print(dictionary['Imie'.lower()])  # ['Radek', 'Tomek', 'Anna']
 
+print(dictionary.get("Imie"))  # None
+print(dictionary.get("Imie", "default"))  # default
