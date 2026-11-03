@@ -79,3 +79,34 @@ lista_nazwy = ["Ala", "Tomek", "Zenek", 'Basia']
 wiek = [24, 18, 34, 20]
 
 # Ala 24
+for i in range(len(lista_nazwy)):
+    print(f"{lista_nazwy[i]}, {wiek[i]}")
+
+# Ala, 24
+# Tomek, 18
+# Zenek, 34
+# Basia, 20
+
+lista_nazwy = ["Ala", "Tomek", "Zenek", 'Basia', 'Marek']
+wiek = [24, 18, 34, 20]
+
+# zip() - łaczy kolekcje
+for i in zip(lista_nazwy, wiek):
+    print(i)
+# ('Ala', 24)
+# ('Tomek', 18)
+# ('Zenek', 34)
+# ('Basia', 20)
+
+# ValueError: zip() argument 2 is shorter than argument 1
+# for o, w in zip(lista_nazwy, wiek, strict=True):
+for o, w in zip(lista_nazwy, wiek):
+    print(o, w)
+# Ala 24
+# Tomek 18
+# Zenek 34
+# Basia 20
+
+# praca domowe
+# zip_longest
+# 0 Ala 24
