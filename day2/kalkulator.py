@@ -1,5 +1,5 @@
 # napisać kalkulator
 # while True
-# menu z opcjiami
+# menu z opcjami
 # wyświetlić ładnie wynik -> f-string -> 5 * 8 = 40
 # obsłużyc wyjątki
