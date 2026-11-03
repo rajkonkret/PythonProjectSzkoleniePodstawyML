@@ -38,3 +38,18 @@ for k, v in dictionary.items():
 for k, v in dictionary.items():
     print(k, v, sep="-ooo-", end=" | | ")
 # imie-ooo-Radek | | nazwisko-ooo-Kowalski | |
+
+pol_ang = {'pies': "dog", "kot": "cat", "dach": "roof"}
+# zrobic ang_pol
+
+print()
+ang_pol = {}
+for k, v in pol_ang.items():
+    ang_pol[v] = k
+
+print(ang_pol)
+# {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
+
+# dict comprehensions
+print({v: k for k, v in pol_ang.items()})
+# {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
