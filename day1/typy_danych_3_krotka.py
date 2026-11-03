@@ -16,3 +16,14 @@ tupla_jeden = (45,)  # pep8 zaleca nawiasy dla tupli jednoelementowych
 # tupla_jeden = 45,
 print(tupla_jeden)
 print(type(tupla_jeden))
+
+del tupla_jeden  # usunięcie całej tupli
+# print(tupla_jeden)  # NameError: name 'tupla_jeden' is not defined
+
+# tupla_liczby[0] = 123  # TypeError: 'tuple' object does not support item assignment
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
+
+print(tupla_imiona.index("Radek"))  # indeks 2
+print(tupla_imiona.count("Radek"))  # występuje 1 raz
+
+print(len(tupla_imiona))  # długość 4
