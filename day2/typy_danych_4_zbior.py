@@ -65,3 +65,5 @@ print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
 # zmienia bazowy
 zbior.update(zbior_2)
 print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+
+krotka = tuple(zbior)
