@@ -61,9 +61,19 @@ print(dict_small)  # {'x': 20, 'imie': 'Radek', 'wiek': 54}
 
 # napisac aplikację kalkulator
 # a + b
-a = int(input("Podaj liczbę a: "))
-b = float(input("Podaj liczbę b: "))
-print(int(a) + float(b))
+# a = int(input("Podaj liczbę a: "))
+# b = float(input("Podaj liczbę b: "))
+# print(int(a) + float(b))
 # Podaj liczbę a: 5
 # Podaj liczbę b: 6
 # 11.0
+
+# napisac program słownik pol-ang
+pol_ang = {'pies': "dog", "kot": "cat", "dach": "roof"}
+print("Znam takie słowa:", pol_ang.keys())
+
+odp = input("Podaj słówko do przetłumaczenia: ")
+print(f"""
+Tłumaczenie słowa: {odp}
+to: {pol_ang.get(odp.strip().lower(), "Nie ma takiego słowa w słowniku")}
+""")
