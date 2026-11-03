@@ -5,9 +5,16 @@
 # obsłużyc wyjątki
 
 while True:
-    print("Tu będzie menu")
+    # print("Tu będzie menu")
+    print("""
+    1. Dodawanie
+    2. Odejmowanie
+    5. Koniec
+    """)
 
     odp = input("Wybierz opcję z menu: ")
 
-    if odp == "5":
+    # if odp == "5":
+    #     break
+    if odp not in ['1', '2']:
         break
