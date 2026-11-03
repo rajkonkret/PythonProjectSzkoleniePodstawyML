@@ -77,28 +77,41 @@ print(f"Rabat wynosi: {rabat}")
 # napisac test z...
 # trzy patania
 # puntacja
-punkty = 0
-
-odp = input("Która drużyna wygrała Mundial 2026: ")
-if odp.strip().casefold() == "Hiszpania".strip().casefold():
-    print("Odpowiedź prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Zła odpowiedź")
-
-odp = input("Jaki jest Król na banknocie 200 zł: ")
-if odp.strip().casefold() == "Zygmunt".strip().casefold():
-    print("Odpowiedź prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Zła odpowiedź")
-
-print("Punkty:", punkty)
+# punkty = 0
+#
+# odp = input("Która drużyna wygrała Mundial 2026: ")
+# if odp.strip().casefold() == "Hiszpania".strip().casefold():
+#     print("Odpowiedź prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Zła odpowiedź")
+#
+# odp = input("Jaki jest Król na banknocie 200 zł: ")
+# if odp.strip().casefold() == "Zygmunt".strip().casefold():
+#     print("Odpowiedź prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Zła odpowiedź")
+#
+# print("Punkty:", punkty)
 
 # Która drużyna wygrała Mundial 2026: Hiszpania
 # Odpowiedź prawidłowa
 # Jaki jest Król na banknocie 200 zł: Zygmunt
 # Odpowiedź prawidłowa
 # Punkty: 2
+
+login = "admin"
+haslo = "1234"
+
+if login == "admin":
+
+    if haslo == "1234":
+        print("Zalogowano")
+    else:
+        print("Błędne hasło")
+
+else:
+    print("Nienany użytkownik")
