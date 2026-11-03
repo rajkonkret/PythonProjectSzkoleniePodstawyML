@@ -186,3 +186,13 @@ print(type(liczby))  # <class 'list'>
 # nadpisac czwarty element inną liczby (czwarty po ludzku)
 # wyciągnąć elementy od pierwszego do trzeciego włącznie
 # wypisać po indeksie dodatnim i ujemnym
+
+print(liczby)
+liczby[3] = 666
+print(liczby[1:3])
+print(liczby[2])
+print(liczby[-2])
+# [54, 999, 12.34, 34, 567, 999]
+# [999, 12.34]
+# 12.34
+# 567
