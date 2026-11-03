@@ -21,7 +21,7 @@ response = data.text
 print(response)
 print(type(response))  # <class 'str'>
 
-response = data.json()  # zamian ajsona na słownik
+response = data.json()  # zamiana jsona na słownik
 print(response)
 # {'table': 'A',
 # 'currency': 'euro',
@@ -30,4 +30,3 @@ print(response)
 print(type(response))  # <class 'dict'>
 
 # nazwa waluty i jaki kurs dzisiaj
-
