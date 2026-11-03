@@ -30,3 +30,5 @@ print(response)
 print(type(response))  # <class 'dict'>
 
 # nazwa waluty i jaki kurs dzisiaj
+print("Waluta:", response['currency'])  # Waluta: euro
+print("Kurs:", response['rates'][0]['mid'])  # Kurs: 4.4185
