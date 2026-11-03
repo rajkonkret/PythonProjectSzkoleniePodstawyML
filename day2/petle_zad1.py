@@ -42,11 +42,40 @@ for i in range(len(lista3)):
 # Wartośc: 6
 # Wartośc: 8
 
-for c in lista3: # pod c znajdzie sie element
+for c in lista3:  # pod c znajdzie sie element
     print(c)
 
 lista_nazwy = ["Ala", "Tomek", "Zenek", 'Basia']
 
 # 0 Ala
 for p in lista_nazwy:
+    print(lista_nazwy.index(p), p)
+
+# enumerate() - zwraca/nadaje numer i element kolekcji
+for p in enumerate(lista_nazwy):
     print(p)
+# (0, 'Ala')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Basia') -> 3 Basia
+
+a, b = (3, 'Basia')
+print(a, b)  # 3 Basia
+
+for i, o in enumerate(lista_nazwy):
+    print(i, o)
+# 0 Ala
+# 1 Tomek
+# 2 Zenek
+# 3 Basia
+
+for i, o in enumerate(lista_nazwy, start=1):
+    print(i, o)
+    # 2 Tomek
+    # 3 Zenek
+    # 4 Basia
+
+lista_nazwy = ["Ala", "Tomek", "Zenek", 'Basia']
+wiek = [24, 18, 34, 20]
+
+# Ala 24
