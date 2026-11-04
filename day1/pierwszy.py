@@ -1,3 +1,5 @@
+# rajkonkret660@gmail.com
+# https://naukapythona.pl
 print()  # wypisz/wydrukuj
 
 print("Witaj Świecie")
