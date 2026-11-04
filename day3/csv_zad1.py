@@ -40,3 +40,12 @@ products = [
     {"sku": 4, 'price': 700},
     {"sku": 5, 'price': 1200},
 ]
+
+filename = "records_products.csv"
+with open(filename, "w", newline="") as csv_f:
+    # csv_writer = csv.DictWriter(csv_f, fieldnames=columns)
+    csv_writer = csv.DictWriter(csv_f, fieldnames=products[0].keys())
+    csv_writer = csv.DictWriter(csv_f, fieldnames=products[0].keys(), delimiter=";")
+
+    csv_writer.writeheader()  # nagłówki
+    csv_writer.writerows(products)  # writerows lista słowników
