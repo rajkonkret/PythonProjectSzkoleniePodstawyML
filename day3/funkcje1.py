@@ -57,4 +57,25 @@ def all_par(*args, **kwargs):
 
 
 all_par(1, 2, 3, 4, 5, a=10, b=89, c=90)
+
+
 # (1, 2, 3, 4, 5) {'a': 10, 'b': 89, 'c': 90}
+
+# funkcje lambda
+def dodaj(a=0, b=0):
+    print(a + b)
+
+
+dodaj_2 = lambda a, b: a + b  # return domyślnie
+print(dodaj_2(4, 7))  # 11
+
+lista = [2, 3, 7, 8, 90, 23, 45]
+# przemnożyc przez 2 wszystkie elementy
+print([i * 2 for i in lista])
+
+# map() - funkcja wyższego rzedu, jako arg ma funkcje
+# lambda jako funkcja anonimowa
+print(list(map(lambda a: a * 2, lista)))
+# [4, 6, 14, 16, 180, 46, 90]
+
+# filter(), reduce()
