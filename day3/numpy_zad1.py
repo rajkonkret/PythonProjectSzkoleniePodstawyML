@@ -151,3 +151,30 @@ sprzedaz = np.array(
         [200, 190, 210, 220],
     ]
 )
+
+print(sprzedaz)
+# [[120 130 140 150]
+#  [100 110 115 125]
+#  [200 190 210 220]]
+
+# suma dla kazdego sklepu
+print(np.sum(sprzedaz[0]))
+
+suma_sklepy_wiersze = sprzedaz.sum(axis=1)  # per sklep
+print("Suma dla każdego sklepu:", suma_sklepy_wiersze)
+# Suma dla każdego sklepu: [540 450 820]
+
+# suma dla każdego miesiąca
+suma_sklepy_kolumna = sprzedaz.sum(axis=0)  # per miesiąc
+print("Suma dla każdego miesiąca:", suma_sklepy_kolumna)
+# Suma dla każdego miesiąca: [420 430 465 495]
+
+# suma wszystkich
+suma_sklepy_wszystkie = sprzedaz.sum()  # sumuje wszytskie wartości
+print("Suma dla wszystkich:", suma_sklepy_wszystkie)  # Suma dla wszystkich: 1810
+
+# najlepszy sklep
+print(np.max(suma_sklepy_wiersze))  # 820
+najlepszy_sklep = np.argmax(suma_sklepy_wiersze)  # poda index
+print("Najlepszy sklep nr:", najlepszy_sklep + 1)
+# Najlepszy sklep nr: 3
