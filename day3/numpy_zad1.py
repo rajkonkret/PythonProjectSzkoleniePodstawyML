@@ -49,3 +49,36 @@ print(zera_int.dtype)  # int64
 zera_int = np.zeros(5, dtype=np.int64)
 print(zera_int)  # [0 0 0 0 0]
 print(zera_int.dtype)  # int64
+
+jedynki = np.ones(5)
+print(jedynki)  # [1. 1. 1. 1. 1.]
+print(jedynki.dtype)  # float64
+print(jedynki.shape)  # (5,)
+
+zakres = np.arange(1, 11)  # od 1 do 10
+print(zakres)  # [ 1  2  3  4  5  6  7  8  9 10]
+
+tablica2d = np.array(
+    [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+)
+print(tablica2d)
+# [[1 2 3]
+#  [4 5 6]]
+print(tablica2d.shape)  # (2, 3)
+
+print(tablica2d[1, 2])  # 6, wiersz drugi (indeks 1) kolumna 3 (indeks 2)
+
+# random
+losowe = np.random.random(5)
+print(losowe)
+# [0.20319649 0.76956343 0.89105657 0.05310144 0.2485744 ]
+print(losowe.dtype)  # float64
+
+losowe_int = np.random.randint(1, 50, 5)
+print(losowe_int)  # [14 31 49 39 49]
+
+tablica_1 = np.random.randint(1, 50, 100)
+print(tablica_1)
