@@ -32,3 +32,11 @@ with open(filename, "w", newline="") as csv_f:
 
     csv_writer.writeheader()  # nagłówki
     csv_writer.writerow(dict_name)
+
+products = [
+    {"sku": 1, 'price': 200},
+    {"sku": 2, 'price': 300},
+    {"sku": 3, 'price': 400},
+    {"sku": 4, 'price': 700},
+    {"sku": 5, 'price': 1200},
+]
