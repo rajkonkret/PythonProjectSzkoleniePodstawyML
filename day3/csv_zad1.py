@@ -19,3 +19,7 @@ with open(filename, "w", newline="") as csv_f:
     csv_writer.writerow(columns)
     csv_writer.writerow(row)
 
+dict_name = dict(zip(columns, row))
+print(dict_name)
+# {'name': 'radek', 'branch': 'coe', 'year': '3', 'cgpa': 0}
+print(type(dict_name))  # <class 'dict'>
