@@ -12,8 +12,10 @@ columns = ['name', 'branch', 'year', 'cgpa']
 
 filename = 'records.csv'
 
-with open(filename, "w") as csv_f:
+# newline="" ominięcie problemu znaku końca linii
+with open(filename, "w", newline="") as csv_f:
     csv_writer = csv.writer(csv_f)
 
+    csv_writer.writerow(columns)
     csv_writer.writerow(row)
 
