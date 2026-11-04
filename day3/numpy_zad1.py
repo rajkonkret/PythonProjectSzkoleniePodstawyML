@@ -178,3 +178,14 @@ print(np.max(suma_sklepy_wiersze))  # 820
 najlepszy_sklep = np.argmax(suma_sklepy_wiersze)  # poda index
 print("Najlepszy sklep nr:", najlepszy_sklep + 1)
 # Najlepszy sklep nr: 3
+
+# statystyka bez numpy
+import statistics as st
+
+pensja = [5400, 550, 6000, 30000]
+print(st.mean(pensja))
+print(st.median(pensja))
+print(st.mode(pensja))  # dominanta - najczęściej występująca
+# 10487.5
+# 5700.0
+# 5400
