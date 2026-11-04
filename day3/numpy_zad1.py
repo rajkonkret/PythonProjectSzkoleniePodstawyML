@@ -189,3 +189,39 @@ print(st.mode(pensja))  # dominanta - najczęściej występująca
 # 10487.5
 # 5700.0
 # 5400
+
+# lista w liscie
+# zrobic tablice numpy
+# wypisać kształt
+
+lista = [[5, 6], [7, 8]]
+b = np.array(lista)
+print(b)
+print(b.shape)
+# [[5 6]
+#  [7 8]]
+# (2, 2)
+
+# ravel() - spłaszczenie
+print(b.ravel())  # zwraca nową tablicę, [5 6 7 8]
+print(b)  # oryginał bez zmian
+# [[5 6]
+#  [7 8]]
+
+arr = np.arange(12)  # od 0 do 11
+print(arr)
+# [ 0  1  2  3  4  5  6  7  8  9 10 11]
+
+new_arr = arr.reshape(4, 3)
+print(new_arr)
+# [[ 0  1  2]
+#  [ 3  4  5]
+#  [ 6  7  8]
+#  [ 9 10 11]]
+
+# new_arr = arr.reshape(5, 3) # ValueError: cannot reshape array of size 12 into shape (5,3)
+
+print(new_arr.transpose())
+# [[ 0  3  6  9]
+#  [ 1  4  7 10]
+#  [ 2  5  8 11]]
