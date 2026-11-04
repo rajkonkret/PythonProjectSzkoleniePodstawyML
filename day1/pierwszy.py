@@ -1,5 +1,6 @@
 # rajkonkret660@gmail.com
 # https://naukapythona.pl
+# https://api.chucknorris.io/
 print()  # wypisz/wydrukuj
 
 print("Witaj Świecie")
