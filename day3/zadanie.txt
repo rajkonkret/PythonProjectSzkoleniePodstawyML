@@ -1,0 +1,9 @@
+wczytac plik
+informacja, opis
+wczytac pierwszych 8 lini
+w kolumnie 'price' NaN wypełnić średnią(inplace)
+zobaczyc efekt
+score -> mediana
+wyswietlic score
+sprawdzic czy nulle w tych kolumnach znikły
+info, describe
