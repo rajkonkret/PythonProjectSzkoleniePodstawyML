@@ -245,3 +245,19 @@ print(arr_hsplit)
 #        [8]]), array([[3],
 #        [6],
 #        [9]])]
+
+# konwersja na inny typ
+arr11 = np.arange(1, 10).reshape(3, 3)
+arr12 = arr11.astype(float)
+print(arr12)
+# [[1. 2. 3.]
+#  [4. 5. 6.]
+#  [7. 8. 9.]]
+print(arr12.dtype)  # float64
+
+# zamian ana typ pythonowy
+list1 = arr11.tolist()
+print("Lista pythonowa:", list1)
+print(type(list1))
+# Lista pythonowa: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# <class 'list'>
