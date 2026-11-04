@@ -106,5 +106,18 @@ print(tablica_1[tablica_1 > 25])
 # [39 42 30 28 39 47 39 32 33 38 27 39 34 48 48 44 26 26 46 32 36 43 40 45
 #  39 35 33 32 42 32 46 29 43 39 34 40 48 31 40 35 40 33 28 46]
 
-#
+# przykłąd analizy
 sprzedaz = np.array([120, 135, 98, 150, 180, 110, 95, 210, 170, 140])
+
+print("Mediana:", np.median(sprzedaz))
+print("Średnia:", np.mean(sprzedaz))
+print("Minimum:", np.min(sprzedaz))
+print("MAksimum:", np.max(sprzedaz))
+print("Odchylenie:", np.std(sprzedaz))
+print("Suma:", np.sum(sprzedaz))
+# Mediana: 137.5
+# Średnia: 140.8
+# Minimum: 95
+# MAksimum: 210
+# Odchylenie: 35.50718237202158
+# Suma: 1408
