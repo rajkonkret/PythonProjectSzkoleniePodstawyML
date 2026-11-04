@@ -121,3 +121,11 @@ print("Suma:", np.sum(sprzedaz))
 # MAksimum: 210
 # Odchylenie: 35.50718237202158
 # Suma: 1408
+
+# duża sprzedaż -> większa od średniej
+duza_sprzedaz = sprzedaz[sprzedaz > np.mean(sprzedaz)]
+print(duza_sprzedaz)  # [150 180 210 170]
+
+# ile razy byłą duża sprzedaz
+dni_duzej_sprzedazy = len(duza_sprzedaz)
+print(dni_duzej_sprzedazy)  # 4 razy
