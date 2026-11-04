@@ -1,9 +1,44 @@
-wczytac plik
-informacja, opis
-wczytac pierwszych 8 lini
-w kolumnie 'price' NaN wypełnić średnią(inplace)
-zobaczyc efekt
-score -> mediana
-wyswietlic score
-sprawdzic czy nulle w tych kolumnach znikły
-info, describe
+
+# Ćwiczenie – analiza i czyszczenie danych w pandas 3
+
+## Zadania
+
+1. **Wczytywanie danych**
+   - Wczytaj plik CSV do obiektu DataFrame.
+   - Wyświetl pierwszych 8 wierszy za pomocą `head()`.
+
+2. **Wstępna analiza danych**
+   - Wyświetl informacje o DataFrame za pomocą `info()`.
+   - Wyświetl statystyki opisowe za pomocą `describe()`.
+   - Sprawdź liczbę brakujących wartości w poszczególnych kolumnach.
+
+3. **Uzupełnianie braków w kolumnie `price`**
+   - Oblicz średnią wartość kolumny `price`.
+   - Zastąp brakujące wartości (`NaN`) obliczoną średnią.
+   - Zapisz zmiany w oryginalnym DataFrame.
+   - Wyświetl wynik operacji.
+
+4. **Uzupełnianie braków w kolumnie `score`**
+   - Oblicz medianę kolumny `score`.
+   - Zastąp brakujące wartości (`NaN`) obliczoną medianą.
+   - Wyświetl wartości kolumny `score`.
+
+5. **Weryfikacja**
+   - Sprawdź, czy w kolumnach `price` i `score` pozostały brakujące wartości.
+   - Ponownie wywołaj `info()` oraz `describe()`.
+   - Porównaj wyniki przed i po czyszczeniu danych.
+
+## Wskazówka – pandas 3
+
+W pandas 3 obowiązuje mechanizm Copy-on-Write.
+
+Unikaj przypisywania łańcuchowego, np.:
+
+`df["price"].fillna(srednia, inplace=True)`
+
+Zamiast tego przypisz wynik do kolumny:
+
+`df["price"] = df["price"].fillna(srednia)`
+
+Możesz również użyć `DataFrame.fillna()` z parametrem `inplace=True`, przekazując słownik wartości dla wybranych kolumn.
+
