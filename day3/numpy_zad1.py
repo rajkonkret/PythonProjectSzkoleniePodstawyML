@@ -82,3 +82,21 @@ print(losowe_int)  # [14 31 49 39 49]
 
 tablica_1 = np.random.randint(1, 50, 100)
 print(tablica_1)
+
+# statystyki
+
+# średnia
+# gdy w danych bęzie NaN, wynik NaN
+print(np.mean(tablica_1))  # 23.64
+
+print(np.nanmean(tablica_1))  # pomija NaN, 24.59
+
+# mediana
+# wartośc środkowa
+print(np.median(tablica_1))  # 26.0
+
+# odchylenie standardowe
+print(np.std(tablica_1))  # 12.47756386479348
+
+print(np.min(tablica_1))  # 1 minimalna
+print(np.max(tablica_1))  # 49 maksymalna
