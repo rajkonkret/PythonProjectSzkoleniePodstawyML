@@ -100,3 +100,8 @@ print(np.std(tablica_1))  # 12.47756386479348
 
 print(np.min(tablica_1))  # 1 minimalna
 print(np.max(tablica_1))  # 49 maksymalna
+
+# filtrowanie danych
+print(tablica_1[tablica_1 > 25])
+# [39 42 30 28 39 47 39 32 33 38 27 39 34 48 48 44 26 26 46 32 36 43 40 45
+#  39 35 33 32 42 32 46 29 43 39 34 40 48 31 40 35 40 33 28 46]
