@@ -129,3 +129,16 @@ print(duza_sprzedaz)  # [150 180 210 170]
 # ile razy byłą duża sprzedaz
 dni_duzej_sprzedazy = len(duza_sprzedaz)
 print(dni_duzej_sprzedazy)  # 4 razy
+
+# dodac 10% do sprzedazy
+# broadcasting
+wzrost_sprzedazy = sprzedaz * 1.10
+print(wzrost_sprzedazy)
+# [132.  148.5 107.8 165.  198.  121.  104.5 231.  187.  154. ]
+
+duza_sprzed_mod = [liczba * 1.1 for liczba in sprzedaz]
+print(duza_sprzed_mod)
+# [np.float64(132.0), np.float64(148.5), np.float64(107.80000000000001),
+# np.float64(165.0), np.float64(198.00000000000003), np.float64(121.00000000000001),
+# np.float64(104.50000000000001),
+# np.float64(231.00000000000003), np.float64(187.00000000000003), np.float64(154.0)]
