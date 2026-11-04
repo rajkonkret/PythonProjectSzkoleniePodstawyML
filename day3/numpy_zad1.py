@@ -261,3 +261,6 @@ print("Lista pythonowa:", list1)
 print(type(list1))
 # Lista pythonowa: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # <class 'list'>
+
+arr_even = np.arange(0, 10, 2)  # start, stop, krok
+print(arr_even)  # [0 2 4 6 8]
