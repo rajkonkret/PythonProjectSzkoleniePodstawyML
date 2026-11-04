@@ -225,3 +225,23 @@ print(new_arr.transpose())
 # [[ 0  3  6  9]
 #  [ 1  4  7 10]
 #  [ 2  5  8 11]]
+
+arr10 = np.arange(1, 10).reshape(3, 3)
+print(arr10)
+# [[1 2 3]
+#  [4 5 6]
+#  [7 8 9]]
+
+arr_split = np.split(arr10, 3)
+print(arr_split)
+# [array([[1, 2, 3]]), array([[4, 5, 6]]), array([[7, 8, 9]])]
+
+arr_hsplit = np.hsplit(arr10, 3)
+print(arr_hsplit)
+# [array([[1],
+#        [4],
+#        [7]]), array([[2],
+#        [5],
+#        [8]]), array([[3],
+#        [6],
+#        [9]])]
