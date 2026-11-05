@@ -1,6 +1,8 @@
 # rajkonkret660@gmail.com
 # https://naukapythona.pl
 # https://api.chucknorris.io/
+# https://www.hackerrank.com/dashboard
+# https://pl.altapps.net/soft/hackerrank-com
 print()  # wypisz/wydrukuj
 
 print("Witaj Świecie")
