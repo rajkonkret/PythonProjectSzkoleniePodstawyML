@@ -49,3 +49,23 @@ print(wynik2)
 # 1     C  styczeń      2000
 # 2     C     luty      1900
 # 3     C   marzec      2200
+
+wynik3 = duckdb.sql("""
+
+    SELECT
+
+        sklep,
+
+        SUM(sprzedaz) AS suma_sprzedazy
+
+    FROM df
+
+    GROUP BY sklep
+
+    ORDER BY suma_sprzedazy DESC
+
+""").df()
+
+print("\nSuma sprzedaży dla każdego sklepu:")
+
+print(wynik3)
