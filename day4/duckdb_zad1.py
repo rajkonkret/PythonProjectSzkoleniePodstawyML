@@ -10,3 +10,42 @@ df = pd.DataFrame(
     "sprzedaz": [1200, 1500, 1700, 900, 1100, 1300, 2000, 1900, 2200]
     }
 )
+
+# pokaz wszystkie wyniki dane
+wynik1 = duckdb.sql(
+    """SELECT * FROM df"""
+)
+
+print(wynik1)
+
+wynik2 = duckdb.sql(
+    """SELECT *
+    FROM df
+    WHERE sprzedaz > 1500
+    """
+)
+
+print(wynik2)
+# ┌─────────┬─────────┬──────────┐
+# │  sklep  │ miesiac │ sprzedaz │
+# │ varchar │ varchar │  int64   │
+# ├─────────┼─────────┼──────────┤
+# │ A       │ marzec  │     1700 │
+# │ C       │ styczeń │     2000 │
+# │ C       │ luty    │     1900 │
+# │ C       │ marzec  │     2200 │
+# └─────────┴─────────┴──────────┘
+
+wynik2 = duckdb.sql(
+    """SELECT *
+    FROM df
+    WHERE sprzedaz > 1500
+    """
+).df()
+
+print(wynik2)
+#   sklep  miesiac  sprzedaz
+# 0     A   marzec      1700
+# 1     C  styczeń      2000
+# 2     C     luty      1900
+# 3     C   marzec      2200
