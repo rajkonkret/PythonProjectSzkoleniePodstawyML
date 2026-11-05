@@ -1,0 +1,15 @@
+-----
+1. Wczytanie pliku
+Załaduj dane z pliku (np. CSV) do obiektu DataFrame, aby móc je analizować i przetwarzać.
+2. Zweryfikowanie kolumny z datą
+Sprawdź, czy kolumna zawierająca daty ma poprawny format.
+Jeśli nie, przekonwertuj ją na typ datetime, aby umożliwić sortowanie, filtrowanie i operacje czasowe.
+3. Konwersja kolumny na typ datetime
+Zamień kolumnę z datą na typ datetime, aby zapewnić poprawną interpretację wartości czasowych.
+4. Zweryfikowanie kolumny volume
+Upewnij się, że kolumna volume zawiera wartości liczbowe.
+Jeśli znajdują się tam wartości tekstowe, puste lub błędne — oczyść je lub zamień na wartości możliwe do konwersji.
+5. Konwersja kolumny volume na typ int
+Po weryfikacji przekształć kolumnę volume na typ całkowity (int), aby umożliwić obliczenia i sortowanie.
+6. Znalezienie 7 wierszy z najniższą wartością volume
+Posortuj dane rosnąco według kolumny volume i wybierz pierwsze 7 rekordów, aby uzyskać obserwacje o najmniejszej wartości wolumenu.
