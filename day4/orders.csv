@@ -1,0 +1,11 @@
+order_id,customer,city,category,price,quantity,discount,paid,total
+101,Anna,Warszawa,Laptop,4200,1,0.05,True,4200
+102,Bartek,Kraków,Telefon,2800,2,0.10,True,5600
+103,Celina,Warszawa,Laptop,5100,1,NaN,False,5100
+104,Daniel,Gdańsk,Akcesoria,120,5,0.00,True,600
+105,Ewa,Poznań,Telefon,3300,1,0.15,True,3300
+106,Filip,Kraków,Laptop,6100,1,0.05,False,6100
+107,Gosia,Warszawa,Akcesoria,80,10,NaN,True,800
+108,Hubert,Gdańsk,Telefon,2500,2,0.20,True,5000
+109,Iga,Poznań,Laptop,4700,1,0.10,True,4700
+110,Jan,Kraków,Akcesoria,150,4,0.00,False,600
