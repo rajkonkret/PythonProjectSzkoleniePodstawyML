@@ -1,0 +1,15 @@
+# Operacje na obrazach
+img = np.random.random((100, 100))
+blurred = ndimage.gaussian_filter(img, sigma=3)
+
+fig, axes = plt.subplots(1, 2, figsize=(10,4))
+axes[0].imshow(img, cmap="grey")
+axes[0].set_title("Rozmycie obrazu")
+axes[0].axis('off')
+
+axes[1].imshow(blurred, cmap="viridis")
+axes[1].set_title("Rozmycie obrazu")
+axes[1].axis('off')
+
+plt.tight_layout()
+plt.show()
