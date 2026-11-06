@@ -85,19 +85,19 @@ print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 0 0 1]
 
 p = Perceptron(learning_rate=0.1, epochs=5)
 p.fit(X, y)
-
-# testowanie perceptronu
-# [0.2 0.1]
-# -0.20000000000000004
-predictions = p.predict(X)
-print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 0 0 1]
-
-p = Perceptron(learning_rate=0.1, epochs=2)
-p.fit(X, y)
-
-# testowanie perceptronu
-# [0.02 0.01]
-# -0.03
+#
+# # testowanie perceptronu
+# # [0.2 0.1]
+# # -0.20000000000000004
+# predictions = p.predict(X)
+# print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 0 0 1]
+#
+# p = Perceptron(learning_rate=0.1, epochs=2)
+# p.fit(X, y)
+#
+# # testowanie perceptronu
+# # [0.02 0.01]
+# # -0.03
 predictions = p.predict(X)
 print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 1 1 1]
 
@@ -105,20 +105,20 @@ p = Perceptron(learning_rate=0.01, epochs=5)
 p.fit(X, y)
 predictions = p.predict(X)
 print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 0 0 1]
-
-# testowanie perceptronu
-# [0.02 0.01]
-# -0.01
-predictions = p.predict(X)
-print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 1 1 1]
-
+#
+# # testowanie perceptronu
+# # [0.02 0.01]
+# # -0.01
+# predictions = p.predict(X)
+# print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 1 1 1]
+#
 p = Perceptron(learning_rate=0.01, epochs=2)
 p.fit(X, y)
 predictions = p.predict(X)
 print("Przeiwdywane wyniki:", predictions)  # Przeiwdywane wyniki: [0 1 1 1]
 
-# plot_decision_boundary(X, y, p)
-
+plot_decision_boundary(X, y, p)
+#
 # or
 print("Trening OR")
 
