@@ -1,5 +1,4 @@
 import pandas as pd
-from IPython.core.pylabtools import figsize
 from matplotlib import pyplot as plt
 from sklearn.datasets import load_diabetes
 from sklearn.linear_model import LinearRegression
