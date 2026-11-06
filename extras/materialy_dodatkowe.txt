@@ -123,3 +123,7 @@ https://www.hackerrank.com/dashboard
 
 #  pip freeze > requirements.txt
 # pip install -r .\requirements.txt
+
+# exe
+pip install pyinstaller
+ pyinstaller --onefile --noconsole .\day5\okno1.py
